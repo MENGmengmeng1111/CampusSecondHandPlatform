@@ -1,0 +1,37 @@
+# 服务器配置
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+# 数据库配置（必须修改为你自己的数据库信息）
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/campus_second_hand?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root  # 改为你的MySQL用户名
+    password: 123456  # 改为你的MySQL密码
+
+  # Redis配置（可选，本地没装可以注释掉）
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+    timeout: 10000ms
+
+# MyBatis-Plus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  # 下划线转驼峰
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl  # 打印SQL日志（开发用）
+  global-config:
+    db-config:
+      id-type: auto  # 主键自增
+      logic-delete-field: deleted  # 逻辑删除字段
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
+# 自定义配置
+jwt:
+  secret: SDUT_CAMPUS_SECOND_HAND_2026  # JWT密钥（建议修改为复杂字符串）
+  expiration: 86400000  # 令牌过期时间：24小时（毫秒）
