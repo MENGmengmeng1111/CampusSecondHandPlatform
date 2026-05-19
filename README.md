@@ -1,2 +1,15 @@
-# CampusSecondHandPlatform
-IT Project Management experiment_3
+# 校园二手闲置物品交易平台
+山东理工大学软件2302班《IT项目管理》实验3项目
+
+## 成员分工
+- 孟冠宇（组长）：用户模块、数据统计模块、项目管理
+- 高振力：物品模块、评价与维权模块
+- 刘方林：购物车模块、订单与支付模块
+
+## 技术栈
+- 后端：Spring Boot 2.7、MyBatis-Plus、MySQL 8.0
+- 工具：Maven、Lombok、JWT
+
+## 分支规范
+- `main`：主分支，存放稳定代码
+- `feature-*`：功能分支，每人一个
