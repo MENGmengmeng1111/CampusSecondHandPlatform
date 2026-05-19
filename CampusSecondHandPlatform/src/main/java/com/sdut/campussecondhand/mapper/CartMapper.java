@@ -3,7 +3,6 @@ package com.sdut.campussecondhand.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.sdut.campussecondhand.entity.Cart;
 import org.apache.ibatis.annotations.Mapper;
-
 import java.util.List;
 
 /**
