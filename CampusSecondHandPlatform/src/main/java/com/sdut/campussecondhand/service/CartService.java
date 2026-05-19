@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 import com.sdut.campussecondhand.entity.Cart;
 
 import java.util.List;
-
 /**
  * 购物车服务接口
  */
