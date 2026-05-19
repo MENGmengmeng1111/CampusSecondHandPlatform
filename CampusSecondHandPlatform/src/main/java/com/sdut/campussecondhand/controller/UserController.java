@@ -7,10 +7,8 @@ import com.sdut.campussecondhand.util.Result;
 import com.sdut.campussecondhand.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 import java.util.Map;
-
 /**
  * 用户模块控制器
  * 负责用户注册、登录、实名认证、密码找回等功能
@@ -23,7 +21,6 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
     /**
      * 用户手机号注册
      * @param user 用户信息（phone、password）
@@ -49,7 +46,6 @@ public class UserController {
             return Result.error("注册失败，请稍后重试");
         }
     }
-
     /**
      * 用户登录
      * @param user 用户信息（phone、password）
@@ -74,7 +70,6 @@ public class UserController {
         
         return Result.success("登录成功", data);
     }
-
     /**
      * 校园实名认证
      * @param userId 用户ID
